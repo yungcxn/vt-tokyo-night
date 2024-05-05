@@ -1,7 +1,9 @@
-## mkinitcpio setcolors hook
+## Tokyo Night Theme for VT 
 
 Archlinux [mkinitcpio](https://wiki.archlinux.org/index.php/mkinitcpio) hook to
 set the `Virtual Console` colors during early userspace.
+
+This would mean, applications like `tuigreetd` or `tty` have your wanted colors! :)
 
 Depends on [linux-vt-setcolors](https://github.com/evanpurkhiser/linux-vt-setcolors).
 
