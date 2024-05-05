@@ -1,0 +1,16 @@
+COLOR_0=1d202f # black
+COLOR_1=f7768e # red
+COLOR_2=9ece6a # green
+COLOR_3=e0af68 # yellow
+COLOR_4=7aa2f7 # blue
+COLOR_5=bb9af7 # magenta
+COLOR_6=7dcfff # cyan
+COLOR_7=a9b1d6 # white
+COLOR_8=414868 # black
+COLOR_9=f7768e # red
+COLOR_10=9ece6a # green
+COLOR_11=e0af68 # yellow
+COLOR_12=7aa2f7 # blue
+COLOR_13=bb9af7 # magenta
+COLOR_14=7dcfff # cyan
+COLOR_15=c0caf5 # white
