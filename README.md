@@ -17,4 +17,4 @@ Copy the files:
 Then, add to `HOOKS` in `/etc/mkinitcpio.conf` either `colors` (if using `udev`) or `sd-colors` (if using `systemd`).
 You can see what you use in the `HOOKS` mentioned in the `/etc/mkinitcpio.conf`.
 
-Regenerate the `initramfs` to apply the changes by running `sudo mkinitcpio -p linux`.
+Regenerate the `initramfs` to apply the changes by running `sudo mkinitcpio -p linux` (or whatever kernel you use besides `linux`).
