@@ -7,34 +7,14 @@ Depends on [linux-vt-setcolors](https://github.com/evanpurkhiser/linux-vt-setcol
 
 ### Usage
 
-Install this by either using the [AUR](https://aur.archlinux.org/packages/mkinitcpio-colors-git) or by copying:
+Copy the files:
 
 - `install/*` to `/etc/initcpio/install/`
 - `hooks/*` to `/etc/initcpio/hooks/`
 - `setcolors.service` to `/etc/systemd/system/`
+- Paste the contents of `vconsole-colors.txt` (Tokyo Night Theme's color values in the right format) to the end of `/etc/vconsole.conf` 
 
-Then, add to `HOOKS` in `/etc/mkinitcpio.conf` either `colors` or `sd-colors`
-after `udev` or `systemd` respectively.
+Then, add to `HOOKS` in `/etc/mkinitcpio.conf` either `colors` (if using `udev`) or `sd-colors` (if using `systemd`).
+You can see what you use in the `HOOKS` mentioned in the `/etc/mkinitcpio.conf`.
 
-### Configuration
-
-Define colors in `/etc/vconsole.conf` with the format `COLOR_X=hexcode`, being
-X a number between 0 and 15, like:
-
-```sh
-COLOR_0=000000 # black
-COLOR_1=550000 # darkred
-...
-COLOR_15=ffffff # white
-```
-
-Regenerate the `initramfs` to apply the changes.
-
-### Converting
-
-The following sed command can be used to convert from a [setcolors configuration](https://github.com/evanpurkhiser/linux-vt-setcolors/blob/main/example-colors/solarized)
-to the `/etc/vconsole.conf` format.
-
-```sh
-$ sed 's/^\(.*\)#\(.\{6\}\).*$/COLOR_\1=\2/'
-```
+Regenerate the `initramfs` to apply the changes by running `sudo mkinitcpio -p linux`.
