@@ -5,7 +5,7 @@ set the `Virtual Console` colors during early userspace.
 
 This would mean, applications like `tuigreetd` or `tty` have your wanted colors! :)
 
-Depends on [linux-vt-setcolors](https://github.com/evanpurkhiser/linux-vt-setcolors).
+Depends on [mkinitcpio-colors](https://github.com/evanpurkhiser/mkinitcpio-colors).
 
 ### Usage
 
